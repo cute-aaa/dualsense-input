@@ -151,17 +151,17 @@ impl DualSense {
 
     /// Set rumble motors. `left` = low-frequency (0-255), `right` = high-frequency (0-255).
     /// Sends USB output report (Report ID 0x02).
-    pub fn set_rumble(&self, left: u8, right: u8) -> Result<usize, Error> {
+    pub fn set_rumble(&self, left: u8, right: u8) -> Result<(), Error> {
         let mut report = [0u8; 48];
         report[0] = 0x02; // Report ID
         report[1] = 0x01 | 0x02; // Enable rumble + disable audio haptics
         report[2] = right;
         report[3] = left;
-        Ok(self.device.send_feature_report(&report)?)
+        self.device.write(&report)?;
+        Ok(())
     }
 
-    /// Stop rumble.
-    pub fn stop_rumble(&self) -> Result<usize, Error> {
+    pub fn stop_rumble(&self) -> Result<(), Error> {
         self.set_rumble(0, 0)
     }
 
