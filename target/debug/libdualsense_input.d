@@ -1,1 +1,0 @@
-G:\Projnew\ai\dualsense_test\dualsense-input\target\debug\libdualsense_input.rlib: G:\Projnew\ai\dualsense_test\dualsense-input\src\config.rs G:\Projnew\ai\dualsense_test\dualsense-input\src\controller.rs G:\Projnew\ai\dualsense_test\dualsense-input\src\event.rs G:\Projnew\ai\dualsense_test\dualsense-input\src\lib.rs G:\Projnew\ai\dualsense_test\dualsense-input\src\types.rs
