@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Read PS5 DualSense controller input — buttons, sticks, triggers, touchpad, IMU — with configurable thresholds and filtering"
 license = "MIT"
-repository = "https://github.com/yourname/dualsense-input"
+repository = "https://github.com/cute-aaa/dualsense-input"
 keywords = ["dualsense", "ps5", "controller", "hid", "gamepad"]
 categories = ["game-development", "hardware-support", "os"]
 
